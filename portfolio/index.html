@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1abc9c;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #1abc9c;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #16a085;
+            border-radius: 5px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* Home Section */
+        #home {
+            background-color: #1abc9c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #home img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #fff;
+        }
+
+        #home h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        #home p {
+            font-size: 1.2em;
+        }
+
+        /* About Me Section */
+        #about {
+            background-color: #1abc9c;
+            text-align: center;
+        }
+
+        #about img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: #1abc9c;
+            text-align: center;
+        }
+
+        .project {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Skills Section */
+        #skills {
+            background-color: #1abc9c;
+            text-align: center;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .skills-list li {
+            margin-bottom: 20px;
+        }
+
+        .skills-list h3 {
+            margin: 0;
+            color: #fff;
+        }
+
+        .skills-list p {
+            margin: 5px 0;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #1abc9c;
+            text-align: center;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #ecf0f1;
+            color: #333;
+        }
+
+        form button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #c0392b;
+            transform: scale(1.1);
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <img src="WhatsApp Image 2024-08-27 at 9.51.52 PM.jpeg" alt="Profile Picture">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm Iswarya.B, passionate about UI/UX Design and Software Development.</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="WhatsApp Image 2024-08-27 at 9.51.52 PM.jpeg" alt="About Me Image">
+        <p>I'm Iswarya.B, a Computer Science and Design engineering student with a deep passion for technology, design, and solving complex problems. My journey in the tech world began with a fascination for how things work, which eventually led me to explore software development and UI/UX design. Over the years, I've developed a keen eye for detail, a love for creating intuitive user experiences, and a solid foundation in programming. Whether it's designing a seamless interface or coding a complex system, I thrive on turning ideas into reality. Outside of academics, I enjoy working on personal projects, exploring new design trends, and constantly learning to stay ahead in the ever-evolving world of technology.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="pro1.png" alt="Library Management System">
+            <h3>Library Management System</h3>
+            <p>A Java project for managing library records.</p>
+            <a href="https://github.com/isu15/LibraryManagementSystem.git" target="_blank" style="text-decoration: none; color: #2c3e50; font-weight: bold;">View on GitHub</a>
+        </div>
+        <div class="project">
+            <img src="pro2.png" alt="Bank Management System">
+            <h3>Bank Management System</h3>
+            <p>A secure system for managing banking transactions.</p>
+            <a href="https://github.com/isu15/BankingSystem.git" target="_blank" style="text-decoration: none; color: #2c3e50; font-weight: bold;">View on GitHub</a>
+        </div>
+        <div class="project">
+            <img src="ttt.png" alt="Tic Tac Toe">
+            <h3>Tic Tac Toe</h3>
+            <p>A classic Tic Tac Toe game implemented in JavaScript.</p>
+            <a href="https://github.com/isu15/tic-tac-toe.git" target="_blank" style="text-decoration: none; color: #2c3e50; font-weight: bold;">View on GitHub</a>
+        </div>
+        <div class="project">
+            <img src="bg2.jfif" alt="Cake Shop Website">
+            <h3>Cake Shop Website</h3>
+            <p>A beautiful and responsive website for a cake shop.</p>
+            <a href="https://github.com/isu15/sweet-cake.git" target="_blank" style="text-decoration: none; color: #2c3e50; font-weight: bold;">View on GitHub</a>
+        </div>
+        <div class="project">
+            <img src="watch bg.png" alt="Stopwatch App">
+            <h3>Stopwatch App</h3>
+            <p>A functional stopwatch application with start, stop, and reset features.</p>
+            <a href="https://github.com/isu15/tic-tac-toe.git" target="_blank" style="text-decoration: none; color: #2c3e50; font-weight: bold;">View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>
+                <h3>C</h3>
+                <p>Proficient in C programming, including data structures, algorithms, and system-level programming.</p>
+            </li>
+            <li>
+                <h3>Java</h3>
+                <p>Experienced in object-oriented programming, building applications, and software development in Java.</p>
+            </li>
+            <li>
+                <h3>Python</h3>
+                <p>Skilled in Python for data analysis, machine learning, and automation scripting.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to reach out through the form below:</p>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
